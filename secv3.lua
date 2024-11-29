@@ -1,8 +1,6 @@
 local HttpService = game:GetService("HttpService")
 local Players = game:GetService("Players")
 
-local MainRight = Tabs.Main:AddRightGroupbox('SpeXSec V3')
-
 local WhitelistLib = {}
 
 function WhitelistLib:Start()
@@ -13,7 +11,7 @@ function WhitelistLib:Start()
     local progressBar = MainRight:AddSlider('AuthTimer', {
         Text = 'Authorization Check',
         Default = 30,
-        Min = 0,
+        Min = 30,
         Max = 30,
         Rounding = 0,
         Compact = false
